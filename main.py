@@ -1,8 +1,17 @@
 howManySentances = input('Paste your text: ')
-count = 0
+sentanceCount = 0
+wordCount = 1
 for x in howManySentances:
   if x == '.':
-    count += 1
+    sentanceCount += 1
   else:
     pass
-print (count)
+for x in howManySentances:
+  if x == ' ':
+    wordCount += 1
+  else:
+    pass
+strLength = str(len(howManySentances))
+print ("Sentances: " + str(sentanceCount))
+print ("Words: " + str(wordCount))
+print ("Charecters: " + strLength)
